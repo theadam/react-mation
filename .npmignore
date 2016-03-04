@@ -1,0 +1,8 @@
+doc
+src
+examples
+.DS_Store
+.eslintrc
+.gitignore
+.npmignore
+webpack.config.js

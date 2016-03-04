@@ -1,0 +1,10 @@
+.bouncy {
+  border: 4px solid black;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  overflow: none;
+}
