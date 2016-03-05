@@ -4,9 +4,14 @@ import Mation, { spring } from 'mation';
 export default function wrapper(name, config, InnerComponent) {
   return class WrappedMation extends Component {
     displayName = `WrappedMation-${name}`;
+    shouldSkip = true;
 
     handler = (value) => {
-      this.setState({value});
+      if (!this.shouldSkip) {
+        this.setState({value});
+      } else {
+        this.shouldSkip = false;
+      }
     }
 
     spring = (v, newConfig) => {
