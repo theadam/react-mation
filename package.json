@@ -43,7 +43,7 @@
     "react-dom": "^0.14.0"
   },
   "dependencies": {
-    "mation": "0.0.1",
+    "mation": "0.0.2",
     "simple-signal": "0.0.2"
   }
 }
