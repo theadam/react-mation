@@ -25,3 +25,14 @@ const { spring } = this.props;
 
 return <h4 style={{transform: `translateY(${spring(yOffset)})`}}>HELLO!!!</h4>;
 ```
+<<<<<<< HEAD
+=======
+
+[Full Example Here](https://jsfiddle.net/theadam/08ymvyuu/2/embedded/result%2Cjs%2Chtml/)
+
+Instead of just calling the spring prop with the destination of the animation, you can also pass it a config value:
+
+`spring(destination, presets.wobbly)`
+
+
+>>>>>>> master
