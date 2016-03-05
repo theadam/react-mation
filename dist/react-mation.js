@@ -157,9 +157,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	      _get(Object.getPrototypeOf(WrappedMation.prototype), 'constructor', this).apply(this, arguments);
 
 	      this.displayName = 'WrappedMation-' + name;
+	      this.shouldSkip = true;
 
 	      this.handler = function (value) {
-	        _this.setState({ value: value });
+	        if (!_this.shouldSkip) {
+	          _this.setState({ value: value });
+	        } else {
+	          _this.shouldSkip = false;
+	        }
 	      };
 
 	      this.spring = function (v, newConfig) {
